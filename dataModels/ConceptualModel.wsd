@@ -3,18 +3,24 @@
 object round
 object turn
 object player
-object hangManPlayer
-object ticTacToePlayer
 object typeGame
 object typeOfPlayer
 
-player --|{ typeGame
-typeGame --|{ ticTacToePlayer
-typeGame --|{ hangManPlayer
-
-round -left-|{ turn
-
-ticTacToePlayer --|| round
-
+player -up-|{ typeGame
+round --|{ turn
 player --|| typeOfPlayer
+player -left-|| round
+
+/' Tic Tac Toe'/
+object board
+object piece
+
+board --|{piece
+player --|{piece
+
+/' HangMan'/
+object word
+
+player --|{word
+
 @enduml

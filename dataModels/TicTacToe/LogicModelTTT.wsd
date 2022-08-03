@@ -1,0 +1,27 @@
+@startuml VocabularyLogicModelTTT
+
+entity typeOfPlayer {
+    * id_typeOfPlayer : number <<generated>>
+    --
+    * typeOfPlayer: varchar2(25)
+}
+
+entity player {
+    * id_Player : number <<generated>>
+    --
+    * id_typeOfPlayer : number
+}
+
+entity board {
+    * id_Board : number <<generated>>
+    * freePositions : number
+}
+entity piece{
+    *id_piece : number <<generated>>
+    *piece : varchar2(1)
+}
+
+board --|{piece
+player --||typeOfPlayer
+player --|{piece
+@enduml

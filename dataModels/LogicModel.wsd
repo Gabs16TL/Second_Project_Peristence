@@ -31,7 +31,35 @@ entity typeGame
 }
 
 player -up-|{ typeGame
-round -down-|{ turn
-player --|| round
+round --|{ turn
+player -left-|| round
 player --|| typeOfPlayer
+
+/' Tic Tac Toe'/
+entity board {
+    * id_Board : number <<generated>>
+    * freePositions : number
+}
+entity piece{
+    *id_piece : number <<generated>>
+    *piece : varchar2(1)
+}
+
+board --|{piece
+player --|{piece
+
+
+/' HangMan'/
+
+entity word {
+    * id_Word : number <<generated>>
+    --
+    * secretWord varchar2(50)
+    * guessedWord varchar2(50)
+}
+
+player --|{word
+
+
+
 @enduml
