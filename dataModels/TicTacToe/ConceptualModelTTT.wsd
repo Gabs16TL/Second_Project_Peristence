@@ -1,9 +1,0 @@
-@startuml VocabularyConceptualModelTTT
-
-object ticTacToePlayer
-object board
-object piece
-
-board --|{piece
-ticTacToePlayer --||piece
-@enduml
