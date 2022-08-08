@@ -1,0 +1,183 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4B316BBA-52F3-8047-8DD6-975F5BA0B7EE" name="player">
+<createdBy>ana.hernandez09</createdBy>
+<createdTime>2022-08-08 19:58:11 UTC</createdTime>
+<generatorID>06217C84-B5C0-16B6-85B6-0216F68065DC</generatorID>
+<ownerDesignName>Modeler-SecondProject</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_player" id="B342D871-F23E-191F-0EBD-23041BDB23CE">
+<createdBy>ana.hernandez09</createdBy>
+<createdTime>2022-08-08 19:58:11 UTC</createdTime>
+<generatorID>030C20AE-8B31-6060-7D6D-510F7E6C9CDF</generatorID>
+<ownerDesignName>Modeler-SecondProject</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="player_name" id="0B6FE9DC-CDFA-C60D-049B-0ED2A3EE61D7">
+<createdBy>ana.hernandez09</createdBy>
+<createdTime>2022-08-08 19:58:11 UTC</createdTime>
+<generatorID>D63FDAEA-6F3C-BCF6-E96E-3699C39B8306</generatorID>
+<ownerDesignName>Modeler-SecondProject</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="win_points" id="3C1452E0-0E5A-9BA0-7824-8E406AD47F5F">
+<createdBy>ana.hernandez09</createdBy>
+<createdTime>2022-08-08 19:58:11 UTC</createdTime>
+<generatorID>25220B87-27DA-D908-D3CF-0651041862F9</generatorID>
+<ownerDesignName>Modeler-SecondProject</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="loose_points" id="2345C5DB-6F34-DCC3-144B-38BFA00DAB6C">
+<createdBy>ana.hernandez09</createdBy>
+<createdTime>2022-08-08 19:58:11 UTC</createdTime>
+<generatorID>F10583BE-F545-9191-A204-3CAA8E3AA5C8</generatorID>
+<ownerDesignName>Modeler-SecondProject</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="typeGame_id_typeGame" id="04696C8E-E8BA-FC30-0B52-B61151020891">
+<createdBy>ana.hernandez09</createdBy>
+<createdTime>2022-08-08 19:58:11 UTC</createdTime>
+<generatorID>684F52E6-BFDC-6125-CC40-7349AE23DCFE</generatorID>
+<ownerDesignName>Modeler-SecondProject</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="65F9B67A-FA7B-115E-29F1-AD7DDF89375A" referredColumn="651E5D8B-E1C8-0351-809A-30067E6170A3"/>
+</associations>
+</Column>
+<Column name="typeOfPlayer_id_typeOfPlayers" id="56B62041-ADF3-F7A2-FFA4-C696B514C9B6">
+<createdBy>ana.hernandez09</createdBy>
+<createdTime>2022-08-08 19:58:11 UTC</createdTime>
+<generatorID>B0ADA462-3CA8-F9B3-787E-24F6465B14A8</generatorID>
+<ownerDesignName>Modeler-SecondProject</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4ACBFFBE-6F8B-752C-0336-7B21D326967C" referredColumn="C3663AC7-EA82-716C-A96E-7E6F8F0EFEC5"/>
+</associations>
+</Column>
+<Column name="word_id_Word" id="E0EB9458-F5CF-6458-C4F1-AD1137DE2C7A">
+<createdBy>ana.hernandez09</createdBy>
+<createdTime>2022-08-08 19:58:11 UTC</createdTime>
+<generatorID>5CCE2482-3CC8-140D-95F1-A58EC9311D0B</generatorID>
+<ownerDesignName>Modeler-SecondProject</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DB604912-50AA-5572-BF8C-F187523AE1CD" referredColumn="8F548EFB-FD3A-8B6D-BBD7-42AD0DC27C04"/>
+</associations>
+</Column>
+<Column name="piece_id_piece" id="9B7CE7B4-1DE8-6114-F799-C8391BE924D2">
+<createdBy>ana.hernandez09</createdBy>
+<createdTime>2022-08-08 19:58:11 UTC</createdTime>
+<generatorID>56588408-C7E2-6C1E-33F9-24E3B6682706</generatorID>
+<ownerDesignName>Modeler-SecondProject</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C8A3BCA1-7443-F5F7-4462-D6FD74A95993" referredColumn="6A591EF7-8F8D-52B3-B49E-5DBEBF950E73"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FC7D4CA9-7B28-825D-9CD7-1E73F5625462" name="player_PK">
+<createdBy>ana.hernandez09</createdBy>
+<createdTime>2022-08-08 19:58:11 UTC</createdTime>
+<generatorID>2C4690EB-182E-3DF3-A47C-7BBA16CC2B43</generatorID>
+<ownerDesignName>Modeler-SecondProject</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B342D871-F23E-191F-0EBD-23041BDB23CE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="93D09000-9D06-AC52-12B6-269FC8EAA8DA" name="player_typeGame_FK">
+<createdBy>ana.hernandez09</createdBy>
+<createdTime>2022-08-08 19:58:11 UTC</createdTime>
+<generatorID>1EA36B95-BEE1-84C9-9CDE-429BE1C1A55C</generatorID>
+<ownerDesignName>Modeler-SecondProject</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="04696C8E-E8BA-FC30-0B52-B61151020891"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B69ED7EA-0DBB-3F36-14A0-1384FB62AB76" name="player_typeOfPlayer_FK">
+<createdBy>ana.hernandez09</createdBy>
+<createdTime>2022-08-08 19:58:11 UTC</createdTime>
+<generatorID>409C8803-CE3B-E193-0956-74F9EA6802F4</generatorID>
+<ownerDesignName>Modeler-SecondProject</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="56B62041-ADF3-F7A2-FFA4-C696B514C9B6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E7F9FF5D-1964-05D9-54D9-45338C828CB4" name="player_word_FK">
+<createdBy>ana.hernandez09</createdBy>
+<createdTime>2022-08-08 19:58:11 UTC</createdTime>
+<generatorID>B8BD7095-3AB9-608E-4C86-7889A53F6257</generatorID>
+<ownerDesignName>Modeler-SecondProject</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E0EB9458-F5CF-6458-C4F1-AD1137DE2C7A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="63788206-F94E-4B55-E350-1FA8A5F3371B" name="player_piece_FK">
+<createdBy>ana.hernandez09</createdBy>
+<createdTime>2022-08-08 19:58:11 UTC</createdTime>
+<generatorID>CF4AE92E-81F8-0477-05BE-5BF1FDEE70F8</generatorID>
+<ownerDesignName>Modeler-SecondProject</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9B7CE7B4-1DE8-6114-F799-C8391BE924D2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6539D001-933D-908B-5001-671DF188DB28" name="typeGame">
+<createdBy>ana.hernandez09</createdBy>
+<createdTime>2022-08-08 18:50:10 UTC</createdTime>
+<ownerDesignName>Modeler-SecondProject</ownerDesignName>
+<engineerTo>
+<item key="54988FDA-89C2-94A8-4D3C-17BCB5895038" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_typeGame" id="F85E9762-825D-FD53-C788-76D847FE76CA">
+<createdBy>ana.hernandez09</createdBy>
+<createdTime>2022-08-08 18:50:53 UTC</createdTime>
+<ownerDesignName>Modeler-SecondProject</ownerDesignName>
+<engineerTo>
+<item key="54988FDA-89C2-94A8-4D3C-17BCB5895038" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="typeGame" id="5BB20F6D-B900-5BAC-9A90-ED85E2BC5842">
+<createdBy>ana.hernandez09</createdBy>
+<createdTime>2022-08-08 18:51:10 UTC</createdTime>
+<ownerDesignName>Modeler-SecondProject</ownerDesignName>
+<engineerTo>
+<item key="54988FDA-89C2-94A8-4D3C-17BCB5895038" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0C2B1EF4-7EDC-D0C3-C66A-B53406C1D252" name="typeGame PK">
+<createdBy>ana.hernandez09</createdBy>
+<createdTime>2022-08-08 18:51:06 UTC</createdTime>
+<ownerDesignName>Modeler-SecondProject</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="54988FDA-89C2-94A8-4D3C-17BCB5895038" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F85E9762-825D-FD53-C788-76D847FE76CA</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

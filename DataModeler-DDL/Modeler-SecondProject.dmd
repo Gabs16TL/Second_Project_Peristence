@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Modeler-SecondProject" id="BA85C506-D774-0E81-4485-6B27A291CA48" version="3.5">
+<createdBy>ana.hernandez09</createdBy>
+<createdTime>2022-08-08 18:48:58 UTC</createdTime>
+<ownerDesignName>Modeler-SecondProject</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>BA85C506-D774-0E81-4485-6B27A291CA48</designId>
+</OSDM_Design>

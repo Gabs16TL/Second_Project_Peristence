@@ -1,0 +1,50 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DAF988D0-2BF8-BB61-2615-C23E949DBA50" name="piece">
+<createdBy>ana.hernandez09</createdBy>
+<createdTime>2022-08-08 19:58:11 UTC</createdTime>
+<generatorID>0EC3EECA-9C0E-FE0A-6DB3-5BF632EF06CE</generatorID>
+<ownerDesignName>Modeler-SecondProject</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_piece" id="6A591EF7-8F8D-52B3-B49E-5DBEBF950E73">
+<createdBy>ana.hernandez09</createdBy>
+<createdTime>2022-08-08 19:58:11 UTC</createdTime>
+<generatorID>23739EA0-DB50-3C62-FE8F-DA2985C0F2D7</generatorID>
+<ownerDesignName>Modeler-SecondProject</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="piece" id="AACDD439-063D-72CA-7763-A47E97EF449C">
+<createdBy>ana.hernandez09</createdBy>
+<createdTime>2022-08-08 19:58:11 UTC</createdTime>
+<generatorID>8ABDE634-0971-5F9A-446D-9796DE1480B2</generatorID>
+<ownerDesignName>Modeler-SecondProject</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="86AE4B72-E4D8-F914-7BB4-811F2099D087" name="piece_PK">
+<createdBy>ana.hernandez09</createdBy>
+<createdTime>2022-08-08 19:58:11 UTC</createdTime>
+<generatorID>001B6F6F-C38D-8FAE-17DE-83A8640E9B55</generatorID>
+<ownerDesignName>Modeler-SecondProject</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6A591EF7-8F8D-52B3-B49E-5DBEBF950E73"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

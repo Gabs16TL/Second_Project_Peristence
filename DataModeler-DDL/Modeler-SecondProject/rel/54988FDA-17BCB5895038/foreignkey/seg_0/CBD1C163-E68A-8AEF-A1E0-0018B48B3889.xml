@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="CBD1C163-E68A-8AEF-A1E0-0018B48B3889" containerWithKeyObject="80ADD8D0-508A-7CA4-4475-536B78AD262C" localFKIndex="5E1D0C2F-5C01-EEFC-52AB-7275532BAED9" name="turn_round_FK">
+<createdBy>ana.hernandez09</createdBy>
+<createdTime>2022-08-08 19:58:11 UTC</createdTime>
+<generatorID>4B2EE98F-F9A3-2FF1-A005-495B16E928CA</generatorID>
+<ownerDesignName>Modeler-SecondProject</ownerDesignName>
+<referredTableLongName>round</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>EBEFAA5B-6AA4-C019-C93B-EC39F8A25AD0</referredTableID>
+<keyObject>62C79170-2AC5-0579-DFA4-AC73A31AF520</keyObject>
+<referredKeyID>62C79170-2AC5-0579-DFA4-AC73A31AF520</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_round</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

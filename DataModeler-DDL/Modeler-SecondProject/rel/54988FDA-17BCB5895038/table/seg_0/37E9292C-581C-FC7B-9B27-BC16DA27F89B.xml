@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="37E9292C-581C-FC7B-9B27-BC16DA27F89B" name="board">
+<createdBy>ana.hernandez09</createdBy>
+<createdTime>2022-08-08 19:58:11 UTC</createdTime>
+<generatorID>EAB6B4DD-9360-8BC6-3E81-A8646B8A67C3</generatorID>
+<ownerDesignName>Modeler-SecondProject</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_board" id="A5BE1A63-5F9F-F21A-350D-CDAC7ED62A23">
+<createdBy>ana.hernandez09</createdBy>
+<createdTime>2022-08-08 19:58:11 UTC</createdTime>
+<generatorID>8B6AA6A3-6711-F5A0-5F27-48256A8CA330</generatorID>
+<ownerDesignName>Modeler-SecondProject</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="freePossitions" id="BBC065E4-111D-583B-4409-93226D5D0799">
+<createdBy>ana.hernandez09</createdBy>
+<createdTime>2022-08-08 19:58:11 UTC</createdTime>
+<generatorID>34AEBB77-6C36-0C3C-40BE-8415D1E8BABF</generatorID>
+<ownerDesignName>Modeler-SecondProject</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="piece_id_piece" id="2DF4E9CC-4C20-C02C-DE24-4DD94E678453">
+<createdBy>ana.hernandez09</createdBy>
+<createdTime>2022-08-08 19:58:11 UTC</createdTime>
+<generatorID>57C1937B-718F-18F7-F4FD-5EDBC85B981C</generatorID>
+<ownerDesignName>Modeler-SecondProject</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AD5CBF3D-2918-C1C9-D26E-F50A509325A5" referredColumn="6A591EF7-8F8D-52B3-B49E-5DBEBF950E73"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DFA99808-E5D1-BD04-EB59-E533A3D55210" name="board_PK">
+<createdBy>ana.hernandez09</createdBy>
+<createdTime>2022-08-08 19:58:11 UTC</createdTime>
+<generatorID>CEECEA1E-72A6-03C0-1ED0-49418B75267F</generatorID>
+<ownerDesignName>Modeler-SecondProject</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A5BE1A63-5F9F-F21A-350D-CDAC7ED62A23"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2B519378-1B6A-62F4-DCF7-BDD5516627E3" name="board_piece_FK">
+<createdBy>ana.hernandez09</createdBy>
+<createdTime>2022-08-08 19:58:11 UTC</createdTime>
+<generatorID>C5904A47-04C3-8049-0494-37555232E075</generatorID>
+<ownerDesignName>Modeler-SecondProject</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2DF4E9CC-4C20-C02C-DE24-4DD94E678453"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
