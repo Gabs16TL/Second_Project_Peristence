@@ -1,0 +1,8 @@
+@startuml VocabularyConceptualModelM
+
+
+object hangManPlayer
+object word
+
+hangManPlayer --||word
+@enduml

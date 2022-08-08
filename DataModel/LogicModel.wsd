@@ -1,0 +1,78 @@
+@startuml VocabularyLogicModelMain
+
+entity round {
+    * id_round : number <<generated>>
+    --
+    * id_player : number
+}
+
+entity turn
+{
+    * id_turn : number <<generated>>
+    --
+    * id_round : number
+}
+
+entity player
+{
+    * id_player : number <<generated>>
+    --
+    * playerName :  varchar2(50)
+    * win_points : number
+    * loose_points : number
+    * id_typeOfPlayer : number
+    * id_typeGame : number
+}
+
+entity typeOfPlayer {
+    * id_typeOfPlayer : number <<generated>>
+    --
+    * typeOfPlayer: varchar2(25)
+}
+
+
+entity typeGame
+{
+     * id_typeGame : number <<generated>>
+    --
+    * typeGame: varchar2(15)
+}
+
+player }|-up- typeGame
+round --|{ turn
+player -left-|| round
+player ||-- typeOfPlayer
+
+
+/' Tic Tac Toe'/ 
+entity board {
+    * id_Board : number <<generated>>
+    --
+    * freePositions : number
+}
+entity piece{
+    *id_piece : number <<generated>>
+    --
+    * id_Board : number 
+    * id_player : number 
+    * piece : varchar2(1)
+}
+
+board --|{piece
+player --|{piece
+
+
+/' HangMan'/
+
+entity word {
+    * id_Word : number <<generated>>
+    --
+     * id_player : number 
+    * secretWord varchar2(10)
+    * guessedWord varchar2(10)
+}
+
+player --|{word
+
+
+@enduml
