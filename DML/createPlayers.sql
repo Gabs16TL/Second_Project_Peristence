@@ -57,3 +57,8 @@ INSERT INTO TURN (id_turn,round_id_round) VALUES (003,001);
 INSERT INTO TURN (id_turn,round_id_round) VALUES (004,002);
 INSERT INTO TURN (id_turn,round_id_round) VALUES (005,002);
 INSERT INTO TURN (id_turn,round_id_round) VALUES (006,002);
+
+
+--PLAYER WITH THE HIGHEST NUMBER OF GAMES PLAYED
+--Falta una forma de contar en cuantas rondas ha jugado un jugador
+SELECT id_player, player_name FROM player pl INNER JOIN round rn ON pl.id_player=rn.player_id_player WHERE id_round=2;
