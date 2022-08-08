@@ -4,18 +4,22 @@ entity round {
     * id_round : number <<generated>>
     --
 }
+
 entity turn
 {
     * id_turn : number <<generated>>
     --
 }
+
 entity player
 {
     * id_player : number <<generated>>
     --
     * playerName :  varchar2(50)
     * id_typeOfPlayer : number
+    * id_typeGame : number
 }
+
 entity typeOfPlayer {
     * id_typeOfPlayer : number <<generated>>
     --
@@ -35,13 +39,17 @@ round --|{ turn
 player -left-|| round
 player --|| typeOfPlayer
 
-/' Tic Tac Toe'/
+/' Tic Tac Toe'/ 
 entity board {
     * id_Board : number <<generated>>
+    --
     * freePositions : number
 }
 entity piece{
     *id_piece : number <<generated>>
+    --
+    * id_Board : number 
+    * id_player : number 
     *piece : varchar2(1)
 }
 
@@ -54,6 +62,7 @@ player --|{piece
 entity word {
     * id_Word : number <<generated>>
     --
+     * id_player : number 
     * secretWord varchar2(50)
     * guessedWord varchar2(50)
 }
