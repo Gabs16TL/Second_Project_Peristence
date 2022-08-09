@@ -1,17 +1,17 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DAF988D0-2BF8-BB61-2615-C23E949DBA50" name="piece">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BFC66F66-C200-10A6-1831-B356B9F77409" name="typeOfPlayer">
 <createdBy>ana.hernandez09</createdBy>
-<createdTime>2022-08-08 19:58:11 UTC</createdTime>
-<generatorID>0EC3EECA-9C0E-FE0A-6DB3-5BF632EF06CE</generatorID>
+<createdTime>2022-08-08 20:12:25 UTC</createdTime>
+<generatorID>B8E22CA5-7F7A-5880-086E-4520ED531F92</generatorID>
 <ownerDesignName>Modeler-SecondProject</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="id_piece" id="6A591EF7-8F8D-52B3-B49E-5DBEBF950E73">
+<Column name="id_typeOfPlayers" id="06F61603-0CE5-19CB-C52A-683CABEB520B">
 <createdBy>ana.hernandez09</createdBy>
-<createdTime>2022-08-08 19:58:11 UTC</createdTime>
-<generatorID>23739EA0-DB50-3C62-FE8F-DA2985C0F2D7</generatorID>
+<createdTime>2022-08-08 20:12:25 UTC</createdTime>
+<generatorID>6E82D1F9-DBE1-8911-DA8F-58B7FF122931</generatorID>
 <ownerDesignName>Modeler-SecondProject</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -20,30 +20,30 @@
 <ownDataTypeParameters>,4,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="piece" id="AACDD439-063D-72CA-7763-A47E97EF449C">
+<Column name="typeOfPlayer" id="C03AA0EF-6F41-2B17-38CF-6D2E41EFAE40">
 <createdBy>ana.hernandez09</createdBy>
-<createdTime>2022-08-08 19:58:11 UTC</createdTime>
-<generatorID>8ABDE634-0971-5F9A-446D-9796DE1480B2</generatorID>
+<createdTime>2022-08-08 20:12:25 UTC</createdTime>
+<generatorID>4674E2AD-0E16-9617-8D26-D26B0CD780D5</generatorID>
 <ownerDesignName>Modeler-SecondProject</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>1</dataTypeSize>
-<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="86AE4B72-E4D8-F914-7BB4-811F2099D087" name="piece_PK">
+<ind_PK_UK id="D4B3E9A4-13BC-A32E-758C-2F10F950EDC9" name="typeOfPlayer_PK">
 <createdBy>ana.hernandez09</createdBy>
-<createdTime>2022-08-08 19:58:11 UTC</createdTime>
-<generatorID>001B6F6F-C38D-8FAE-17DE-83A8640E9B55</generatorID>
+<createdTime>2022-08-08 20:12:25 UTC</createdTime>
+<generatorID>3F114D33-C4F4-14E2-A158-FF6161E0FEB0</generatorID>
 <ownerDesignName>Modeler-SecondProject</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="6A591EF7-8F8D-52B3-B49E-5DBEBF950E73"/>
+<colUsage columnID="06F61603-0CE5-19CB-C52A-683CABEB520B"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

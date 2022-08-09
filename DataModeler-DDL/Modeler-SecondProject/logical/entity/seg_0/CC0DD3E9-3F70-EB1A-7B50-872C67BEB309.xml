@@ -43,45 +43,15 @@
 <dataTypePrecision>4</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_typeGame" id="9AD76132-4F37-A185-89BE-5AD73AF021C2">
+<Attribute name="id_typeOfPlayers" id="B407780D-D661-09F0-F702-0E4E53959C91">
 <createdBy>ana.hernandez09</createdBy>
-<createdTime>2022-08-08 19:46:24 UTC</createdTime>
-<generatorID>7BBE3AE2-4B06-DB24-BFA4-1BC12AAA153E</generatorID>
-<ownerDesignName>Modeler-SecondProject</ownerDesignName>
-<engineerTo>
-<item key="54988FDA-89C2-94A8-4D3C-17BCB5895038" value="true"/>
-</engineerTo>
-<referedAttribute>684F52E6-BFDC-6125-CC40-7349AE23DCFE</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>4</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="id_typeOfPlayers" id="E60CF3F9-C040-BDED-C8EB-980A62722B78">
-<createdBy>ana.hernandez09</createdBy>
-<createdTime>2022-08-08 19:46:43 UTC</createdTime>
+<createdTime>2022-08-08 20:09:53 UTC</createdTime>
 <generatorID>7BBE3AE2-4B06-DB24-BFA4-1BC12AAA153E</generatorID>
 <ownerDesignName>Modeler-SecondProject</ownerDesignName>
 <engineerTo>
 <item key="54988FDA-89C2-94A8-4D3C-17BCB5895038" value="true"/>
 </engineerTo>
 <referedAttribute>B0ADA462-3CA8-F9B3-787E-24F6465B14A8</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>4</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="id_Word" id="B486921A-C280-27F6-01C0-F999428AAB96">
-<createdBy>ana.hernandez09</createdBy>
-<createdTime>2022-08-08 19:47:01 UTC</createdTime>
-<generatorID>7BBE3AE2-4B06-DB24-BFA4-1BC12AAA153E</generatorID>
-<ownerDesignName>Modeler-SecondProject</ownerDesignName>
-<engineerTo>
-<item key="54988FDA-89C2-94A8-4D3C-17BCB5895038" value="true"/>
-</engineerTo>
-<referedAttribute>5CCE2482-3CC8-140D-95F1-A58EC9311D0B</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>

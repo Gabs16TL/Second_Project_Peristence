@@ -1,0 +1,128 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="63D8B8CC-263A-C160-CB7D-26E979DAD2B6" name="player">
+<createdBy>ana.hernandez09</createdBy>
+<createdTime>2022-08-08 20:12:25 UTC</createdTime>
+<generatorID>06217C84-B5C0-16B6-85B6-0216F68065DC</generatorID>
+<ownerDesignName>Modeler-SecondProject</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_player" id="790A403C-521E-4F18-3D37-B91282877B70">
+<createdBy>ana.hernandez09</createdBy>
+<createdTime>2022-08-08 20:12:25 UTC</createdTime>
+<generatorID>030C20AE-8B31-6060-7D6D-510F7E6C9CDF</generatorID>
+<ownerDesignName>Modeler-SecondProject</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="player_name" id="26CF4EA4-3AA7-9011-ED45-114B93EC82F2">
+<createdBy>ana.hernandez09</createdBy>
+<createdTime>2022-08-08 20:12:25 UTC</createdTime>
+<generatorID>D63FDAEA-6F3C-BCF6-E96E-3699C39B8306</generatorID>
+<ownerDesignName>Modeler-SecondProject</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="win_points" id="98862EDE-D5BB-7746-2F8C-CC00D8BC1EDE">
+<createdBy>ana.hernandez09</createdBy>
+<createdTime>2022-08-08 20:12:25 UTC</createdTime>
+<generatorID>25220B87-27DA-D908-D3CF-0651041862F9</generatorID>
+<ownerDesignName>Modeler-SecondProject</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="loose_points" id="28CCBEAA-D470-8230-75D7-2BF5B4B848BE">
+<createdBy>ana.hernandez09</createdBy>
+<createdTime>2022-08-08 20:12:25 UTC</createdTime>
+<generatorID>F10583BE-F545-9191-A204-3CAA8E3AA5C8</generatorID>
+<ownerDesignName>Modeler-SecondProject</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_typeGame" id="C8A0847F-B190-58BB-B948-7CE3500F8E88">
+<createdBy>ana.hernandez09</createdBy>
+<createdTime>2022-08-08 20:12:25 UTC</createdTime>
+<generatorID>684F52E6-BFDC-6125-CC40-7349AE23DCFE</generatorID>
+<ownerDesignName>Modeler-SecondProject</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AE9BBBB3-F198-3B0B-3738-A1B346E0CD3D" referredColumn="582C1B71-EEB5-190C-3D10-C0328C4FFBBA"/>
+</associations>
+</Column>
+<Column name="id_typeOfPlayers" id="5D86EFDF-0E6F-46FB-4916-0F838513BB0F">
+<createdBy>ana.hernandez09</createdBy>
+<createdTime>2022-08-08 20:12:25 UTC</createdTime>
+<generatorID>B0ADA462-3CA8-F9B3-787E-24F6465B14A8</generatorID>
+<ownerDesignName>Modeler-SecondProject</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6B292D52-C253-704D-D27A-0D05FCFE7AAB" referredColumn="06F61603-0CE5-19CB-C52A-683CABEB520B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BD8BDFA7-4672-7B54-22F1-700AC1409716" name="player_PK">
+<createdBy>ana.hernandez09</createdBy>
+<createdTime>2022-08-08 20:12:25 UTC</createdTime>
+<generatorID>2C4690EB-182E-3DF3-A47C-7BBA16CC2B43</generatorID>
+<ownerDesignName>Modeler-SecondProject</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="790A403C-521E-4F18-3D37-B91282877B70"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FF820DB1-66B8-4942-AF1F-D96471807E3A" name="player_typeGame_FK">
+<createdBy>ana.hernandez09</createdBy>
+<createdTime>2022-08-08 20:12:25 UTC</createdTime>
+<generatorID>1EA36B95-BEE1-84C9-9CDE-429BE1C1A55C</generatorID>
+<ownerDesignName>Modeler-SecondProject</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C8A0847F-B190-58BB-B948-7CE3500F8E88"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6A2776BE-A4BA-863A-9394-BFF3A466582D" name="player_typeOfPlayer_FK">
+<createdBy>ana.hernandez09</createdBy>
+<createdTime>2022-08-08 20:12:25 UTC</createdTime>
+<generatorID>409C8803-CE3B-E193-0956-74F9EA6802F4</generatorID>
+<ownerDesignName>Modeler-SecondProject</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5D86EFDF-0E6F-46FB-4916-0F838513BB0F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

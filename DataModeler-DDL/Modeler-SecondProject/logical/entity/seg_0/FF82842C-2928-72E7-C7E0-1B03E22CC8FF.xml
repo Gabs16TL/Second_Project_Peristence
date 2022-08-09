@@ -54,6 +54,36 @@
 <dataTypeSize>10</dataTypeSize>
 <ownDataTypeParameters>10,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="id_player" id="EEF7B34D-4706-80DE-6396-F178DE4943F5">
+<createdBy>ana.hernandez09</createdBy>
+<createdTime>2022-08-08 20:04:32 UTC</createdTime>
+<generatorID>4AF78F68-B101-C0D3-F4CC-166144B82260</generatorID>
+<ownerDesignName>Modeler-SecondProject</ownerDesignName>
+<engineerTo>
+<item key="54988FDA-89C2-94A8-4D3C-17BCB5895038" value="true"/>
+</engineerTo>
+<referedAttribute>030C20AE-8B31-6060-7D6D-510F7E6C9CDF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_typeOfPlayers" id="3A280A15-DE87-BCF8-8F94-E5EA72CED661">
+<createdBy>ana.hernandez09</createdBy>
+<createdTime>2022-08-08 20:09:53 UTC</createdTime>
+<generatorID>4AF78F68-B101-C0D3-F4CC-166144B82260</generatorID>
+<ownerDesignName>Modeler-SecondProject</ownerDesignName>
+<engineerTo>
+<item key="54988FDA-89C2-94A8-4D3C-17BCB5895038" value="true"/>
+</engineerTo>
+<referedAttribute>B0ADA462-3CA8-F9B3-787E-24F6465B14A8</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="93474DC1-677D-89DF-82EC-6D73F5F2CC1F" name="word PK">

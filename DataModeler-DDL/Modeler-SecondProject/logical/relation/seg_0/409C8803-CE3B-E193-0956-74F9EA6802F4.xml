@@ -13,7 +13,7 @@
 <optionalTarget>false</optionalTarget>
 <sourceCardinality>1</sourceCardinality>
 <sourceEntity>B8E22CA5-7F7A-5880-086E-4520ED531F92</sourceEntity>
-<targetCardinalityString>*</targetCardinalityString>
+<targetCardinalityString>1</targetCardinalityString>
 <targetEntity>06217C84-B5C0-16B6-85B6-0216F68065DC</targetEntity>
 <transferable>true</transferable>
 <deleteRule>NO ACTION</deleteRule>

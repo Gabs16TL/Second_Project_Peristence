@@ -1,18 +1,19 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7A670BF9-20D4-6FCF-204A-5CCF3F36AEB4" name="typeGame">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3E1D4F0D-6B66-E6A4-C21C-3AEEE1C09D72" name="turn">
 <createdBy>ana.hernandez09</createdBy>
-<createdTime>2022-08-08 19:58:11 UTC</createdTime>
-<generatorID>6539D001-933D-908B-5001-671DF188DB28</generatorID>
+<createdTime>2022-08-08 20:12:25 UTC</createdTime>
+<generatorID>6A0CCFDA-4F01-9BBE-1381-8E9C3CAAC315</generatorID>
 <ownerDesignName>Modeler-SecondProject</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="id_typeGame" id="651E5D8B-E1C8-0351-809A-30067E6170A3">
+<Column name="id_turn" id="5C312273-D9D4-6E13-4273-3A41CE71253B">
 <createdBy>ana.hernandez09</createdBy>
-<createdTime>2022-08-08 19:58:11 UTC</createdTime>
-<generatorID>F85E9762-825D-FD53-C788-76D847FE76CA</generatorID>
+<createdTime>2022-08-08 20:12:25 UTC</createdTime>
+<generatorID>B7C3BDF7-2839-EAF1-71A8-04C99D667196</generatorID>
 <ownerDesignName>Modeler-SecondProject</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -20,29 +21,33 @@
 <ownDataTypeParameters>,4,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="typeGame" id="7EBB0FA4-F58F-6FEC-84DF-D451149A89D4">
+<Column name="round_id_round" id="2C1BB918-02AC-4400-6705-F15F45C11741">
 <createdBy>ana.hernandez09</createdBy>
-<createdTime>2022-08-08 19:58:11 UTC</createdTime>
-<generatorID>5BB20F6D-B900-5BAC-9A90-ED85E2BC5842</generatorID>
+<createdTime>2022-08-08 20:12:25 UTC</createdTime>
+<generatorID>65248BEE-0851-596A-5C55-9D9F6D93EDA5</generatorID>
 <ownerDesignName>Modeler-SecondProject</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6EAC791B-7403-9330-7532-6E85523FA58F" referredColumn="EB204626-1113-3EB0-F8F4-D85AFC21FBCE"/>
+</associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="DE65DD56-3AA2-B701-DF65-AC9F1BC4B4BD" name="typeGame_PK">
+<ind_PK_UK id="C9EA7AA2-EB8B-9942-DDFD-144685A03A06" name="turn_round_FK">
 <createdBy>ana.hernandez09</createdBy>
-<createdTime>2022-08-08 19:58:11 UTC</createdTime>
-<generatorID>0C2B1EF4-7EDC-D0C3-C66A-B53406C1D252</generatorID>
+<createdTime>2022-08-08 20:12:25 UTC</createdTime>
+<generatorID>4B2EE98F-F9A3-2FF1-A005-495B16E928CA</generatorID>
 <ownerDesignName>Modeler-SecondProject</ownerDesignName>
-<pk>true</pk>
-<indexState>Primary Constraint</indexState>
+<indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="651E5D8B-E1C8-0351-809A-30067E6170A3"/>
+<colUsage columnID="2C1BB918-02AC-4400-6705-F15F45C11741"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

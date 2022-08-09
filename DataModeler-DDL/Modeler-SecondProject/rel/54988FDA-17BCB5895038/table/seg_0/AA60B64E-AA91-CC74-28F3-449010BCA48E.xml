@@ -1,17 +1,17 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="37E9292C-581C-FC7B-9B27-BC16DA27F89B" name="board">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AA60B64E-AA91-CC74-28F3-449010BCA48E" name="round">
 <createdBy>ana.hernandez09</createdBy>
-<createdTime>2022-08-08 19:58:11 UTC</createdTime>
-<generatorID>EAB6B4DD-9360-8BC6-3E81-A8646B8A67C3</generatorID>
+<createdTime>2022-08-08 20:12:25 UTC</createdTime>
+<generatorID>CC0DD3E9-3F70-EB1A-7B50-872C67BEB309</generatorID>
 <ownerDesignName>Modeler-SecondProject</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="id_board" id="A5BE1A63-5F9F-F21A-350D-CDAC7ED62A23">
+<Column name="id_round" id="EB204626-1113-3EB0-F8F4-D85AFC21FBCE">
 <createdBy>ana.hernandez09</createdBy>
-<createdTime>2022-08-08 19:58:11 UTC</createdTime>
-<generatorID>8B6AA6A3-6711-F5A0-5F27-48256A8CA330</generatorID>
+<createdTime>2022-08-08 20:12:25 UTC</createdTime>
+<generatorID>7C8EEE6D-D152-5323-09E8-BC613AA7D7EB</generatorID>
 <ownerDesignName>Modeler-SecondProject</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -20,22 +20,10 @@
 <ownDataTypeParameters>,4,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="freePossitions" id="BBC065E4-111D-583B-4409-93226D5D0799">
+<Column name="player_id_player" id="29CF5818-3FA8-F5A5-E6BA-EBA29CA9F3AC">
 <createdBy>ana.hernandez09</createdBy>
-<createdTime>2022-08-08 19:58:11 UTC</createdTime>
-<generatorID>34AEBB77-6C36-0C3C-40BE-8415D1E8BABF</generatorID>
-<ownerDesignName>Modeler-SecondProject</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>4</dataTypePrecision>
-<ownDataTypeParameters>,4,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="piece_id_piece" id="2DF4E9CC-4C20-C02C-DE24-4DD94E678453">
-<createdBy>ana.hernandez09</createdBy>
-<createdTime>2022-08-08 19:58:11 UTC</createdTime>
-<generatorID>57C1937B-718F-18F7-F4FD-5EDBC85B981C</generatorID>
+<createdTime>2022-08-08 20:12:25 UTC</createdTime>
+<generatorID>ECA79D45-0840-DBAF-0E82-5E30310BFF15</generatorID>
 <ownerDesignName>Modeler-SecondProject</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -45,32 +33,43 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="AD5CBF3D-2918-C1C9-D26E-F50A509325A5" referredColumn="6A591EF7-8F8D-52B3-B49E-5DBEBF950E73"/>
+<colAssociation fkAssociation="3152F9DB-43C6-720C-DBFE-7E1425364FDF" referredColumn="790A403C-521E-4F18-3D37-B91282877B70"/>
 </associations>
+</Column>
+<Column name="player_id_typeOfPlayers" id="2DC49B39-C7A4-34DD-B9FE-D1BA293A08A3">
+<createdBy>ana.hernandez09</createdBy>
+<createdTime>2022-08-08 20:12:25 UTC</createdTime>
+<generatorID>B407780D-D661-09F0-F702-0E4E53959C91</generatorID>
+<ownerDesignName>Modeler-SecondProject</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="DFA99808-E5D1-BD04-EB59-E533A3D55210" name="board_PK">
+<ind_PK_UK id="D129DEB5-6BDB-839B-E8DE-3AB4F254B185" name="round_PK">
 <createdBy>ana.hernandez09</createdBy>
-<createdTime>2022-08-08 19:58:11 UTC</createdTime>
-<generatorID>CEECEA1E-72A6-03C0-1ED0-49418B75267F</generatorID>
+<createdTime>2022-08-08 20:12:25 UTC</createdTime>
+<generatorID>28AC7C58-5AC0-2B80-2C00-58D742F4D2D9</generatorID>
 <ownerDesignName>Modeler-SecondProject</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="A5BE1A63-5F9F-F21A-350D-CDAC7ED62A23"/>
+<colUsage columnID="EB204626-1113-3EB0-F8F4-D85AFC21FBCE"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="2B519378-1B6A-62F4-DCF7-BDD5516627E3" name="board_piece_FK">
+<ind_PK_UK id="9FFD6816-AF8F-ED25-AB1D-3E69CA3C2BA7" name="round_player_FK">
 <createdBy>ana.hernandez09</createdBy>
-<createdTime>2022-08-08 19:58:11 UTC</createdTime>
-<generatorID>C5904A47-04C3-8049-0494-37555232E075</generatorID>
+<createdTime>2022-08-08 20:12:25 UTC</createdTime>
+<generatorID>7BBE3AE2-4B06-DB24-BFA4-1BC12AAA153E</generatorID>
 <ownerDesignName>Modeler-SecondProject</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="2DF4E9CC-4C20-C02C-DE24-4DD94E678453"/>
+<colUsage columnID="29CF5818-3FA8-F5A5-E6BA-EBA29CA9F3AC"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

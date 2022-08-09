@@ -1,17 +1,17 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EBEFAA5B-6AA4-C019-C93B-EC39F8A25AD0" name="round">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="269D1C71-B710-1719-6F21-46AF211F2B38" name="word">
 <createdBy>ana.hernandez09</createdBy>
-<createdTime>2022-08-08 19:58:11 UTC</createdTime>
-<generatorID>CC0DD3E9-3F70-EB1A-7B50-872C67BEB309</generatorID>
+<createdTime>2022-08-08 20:12:25 UTC</createdTime>
+<generatorID>FF82842C-2928-72E7-C7E0-1B03E22CC8FF</generatorID>
 <ownerDesignName>Modeler-SecondProject</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="id_round" id="67AFF569-6F9C-71B2-DD33-0866452B5CAF">
+<Column name="id_Word" id="FB294878-C740-21B9-CD1D-6B93FE996930">
 <createdBy>ana.hernandez09</createdBy>
-<createdTime>2022-08-08 19:58:11 UTC</createdTime>
-<generatorID>7C8EEE6D-D152-5323-09E8-BC613AA7D7EB</generatorID>
+<createdTime>2022-08-08 20:12:25 UTC</createdTime>
+<generatorID>C2EE003F-9447-D92A-7217-B6CE50DD07D6</generatorID>
 <ownerDesignName>Modeler-SecondProject</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -20,10 +20,34 @@
 <ownDataTypeParameters>,4,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="player_id_player" id="B6CE1535-0BA5-EA16-555A-AE8DACE31714">
+<Column name="secretWord" id="398DC5AF-0ABF-14DA-2E4F-E3C6D1473579">
 <createdBy>ana.hernandez09</createdBy>
-<createdTime>2022-08-08 19:58:11 UTC</createdTime>
-<generatorID>ECA79D45-0840-DBAF-0E82-5E30310BFF15</generatorID>
+<createdTime>2022-08-08 20:12:25 UTC</createdTime>
+<generatorID>3471E5DC-842A-464B-DA54-9D987C664513</generatorID>
+<ownerDesignName>Modeler-SecondProject</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="guessedWord" id="31A49D15-8940-BC12-19C0-070FA31A6619">
+<createdBy>ana.hernandez09</createdBy>
+<createdTime>2022-08-08 20:12:25 UTC</createdTime>
+<generatorID>CB4EE516-DFEA-F717-75E0-5E11B068EB20</generatorID>
+<ownerDesignName>Modeler-SecondProject</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="player_id_player" id="937A61C0-9CCF-8D1C-5237-42D24385ADF0">
+<createdBy>ana.hernandez09</createdBy>
+<createdTime>2022-08-08 20:12:25 UTC</createdTime>
+<generatorID>EEF7B34D-4706-80DE-6396-F178DE4943F5</generatorID>
 <ownerDesignName>Modeler-SecondProject</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -33,35 +57,13 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="D7C66BC7-76B6-70D5-FAD0-62FF23905B03" referredColumn="B342D871-F23E-191F-0EBD-23041BDB23CE"/>
+<colAssociation fkAssociation="6255FD23-91C0-5631-6EF8-18E04DCEFCC2" referredColumn="790A403C-521E-4F18-3D37-B91282877B70"/>
 </associations>
 </Column>
-<Column name="player_id_typeGame" id="01EC5FDD-C2BD-0B6F-3B3F-7ECAF48940E7">
+<Column name="id_typeOfPlayers" id="7E0160BA-07C3-F881-75DE-38B238DAFFD2">
 <createdBy>ana.hernandez09</createdBy>
-<createdTime>2022-08-08 19:58:11 UTC</createdTime>
-<generatorID>9AD76132-4F37-A185-89BE-5AD73AF021C2</generatorID>
-<ownerDesignName>Modeler-SecondProject</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="player_id_typeOfPlayers" id="E8A7BC4B-E2B1-4C0E-FA6B-581BF847DB47">
-<createdBy>ana.hernandez09</createdBy>
-<createdTime>2022-08-08 19:58:11 UTC</createdTime>
-<generatorID>E60CF3F9-C040-BDED-C8EB-980A62722B78</generatorID>
-<ownerDesignName>Modeler-SecondProject</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="player_id_Word" id="1CD9EFFB-E176-08C6-DA9B-44E2A9BDD291">
-<createdBy>ana.hernandez09</createdBy>
-<createdTime>2022-08-08 19:58:11 UTC</createdTime>
-<generatorID>B486921A-C280-27F6-01C0-F999428AAB96</generatorID>
+<createdTime>2022-08-08 20:12:25 UTC</createdTime>
+<generatorID>3A280A15-DE87-BCF8-8F94-E5EA72CED661</generatorID>
 <ownerDesignName>Modeler-SecondProject</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -71,27 +73,27 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="62C79170-2AC5-0579-DFA4-AC73A31AF520" name="round_PK">
+<ind_PK_UK id="137335AA-3ED8-DEE0-F3C2-FEC23652AF53" name="word_PK">
 <createdBy>ana.hernandez09</createdBy>
-<createdTime>2022-08-08 19:58:11 UTC</createdTime>
-<generatorID>28AC7C58-5AC0-2B80-2C00-58D742F4D2D9</generatorID>
+<createdTime>2022-08-08 20:12:25 UTC</createdTime>
+<generatorID>93474DC1-677D-89DF-82EC-6D73F5F2CC1F</generatorID>
 <ownerDesignName>Modeler-SecondProject</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="67AFF569-6F9C-71B2-DD33-0866452B5CAF"/>
+<colUsage columnID="FB294878-C740-21B9-CD1D-6B93FE996930"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="AA072DBC-3055-11E8-64A8-B52744842486" name="round_player_FK">
+<ind_PK_UK id="0C3B4705-A48B-A61A-58A3-FF8C909687A5" name="word_player_FK">
 <createdBy>ana.hernandez09</createdBy>
-<createdTime>2022-08-08 19:58:11 UTC</createdTime>
-<generatorID>7BBE3AE2-4B06-DB24-BFA4-1BC12AAA153E</generatorID>
+<createdTime>2022-08-08 20:12:25 UTC</createdTime>
+<generatorID>4AF78F68-B101-C0D3-F4CC-166144B82260</generatorID>
 <ownerDesignName>Modeler-SecondProject</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="B6CE1535-0BA5-EA16-555A-AE8DACE31714"/>
+<colUsage columnID="937A61C0-9CCF-8D1C-5237-42D24385ADF0"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

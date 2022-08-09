@@ -41,6 +41,52 @@
 <dataTypeSize>1</dataTypeSize>
 <ownDataTypeParameters>1,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="id_player" id="8F6CBF32-6272-B9EA-06D8-F73A34BC8359">
+<createdBy>ana.hernandez09</createdBy>
+<createdTime>2022-08-08 20:05:24 UTC</createdTime>
+<generatorID>CF4AE92E-81F8-0477-05BE-5BF1FDEE70F8</generatorID>
+<ownerDesignName>Modeler-SecondProject</ownerDesignName>
+<engineerTo>
+<item key="54988FDA-89C2-94A8-4D3C-17BCB5895038" value="true"/>
+</engineerTo>
+<referedAttribute>030C20AE-8B31-6060-7D6D-510F7E6C9CDF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_board" id="55191C52-2FD5-3626-CBC4-5B72D199C530">
+<createdBy>ana.hernandez09</createdBy>
+<createdTime>2022-08-08 20:07:15 UTC</createdTime>
+<generatorID>C5904A47-04C3-8049-0494-37555232E075</generatorID>
+<ownerDesignName>Modeler-SecondProject</ownerDesignName>
+<engineerTo>
+<item key="54988FDA-89C2-94A8-4D3C-17BCB5895038" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>8B6AA6A3-6711-F5A0-5F27-48256A8CA330</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_typeOfPlayers" id="E429A844-4E6F-9E4E-B830-A752393EEF5A">
+<createdBy>ana.hernandez09</createdBy>
+<createdTime>2022-08-08 20:09:53 UTC</createdTime>
+<generatorID>CF4AE92E-81F8-0477-05BE-5BF1FDEE70F8</generatorID>
+<ownerDesignName>Modeler-SecondProject</ownerDesignName>
+<engineerTo>
+<item key="54988FDA-89C2-94A8-4D3C-17BCB5895038" value="true"/>
+</engineerTo>
+<referedAttribute>B0ADA462-3CA8-F9B3-787E-24F6465B14A8</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="001B6F6F-C38D-8FAE-17DE-83A8640E9B55" name="piece PK">
