@@ -1,8 +1,13 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Modeler-SecondProject" id="BA85C506-D774-0E81-4485-6B27A291CA48" version="3.5">
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Modeler-SecondProject" id="A52C6258-15A9-B99C-21B5-132CFE6A6CA2" version="3.5">
 <createdBy>ana.hernandez09</createdBy>
-<createdTime>2022-08-08 18:48:58 UTC</createdTime>
+<createdTime>2022-08-09 20:31:22 UTC</createdTime>
 <ownerDesignName>Modeler-SecondProject</ownerDesignName>
 <capitalNames>false</capitalNames>
-<designId>BA85C506-D774-0E81-4485-6B27A291CA48</designId>
+<designId>A52C6258-15A9-B99C-21B5-132CFE6A6CA2</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="643B6FAF-5387-FDDD-0DBF-1502E3FE61F0">
+<designStoragePath>C:\SecondProject</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
 </OSDM_Design>
