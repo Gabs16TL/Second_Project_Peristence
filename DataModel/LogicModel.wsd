@@ -70,26 +70,25 @@ entity Box{
 /' HangMan'/
 entity HangManTurn
 {
-    * id_HangMan : number <<generated>>
+    * id_HangManTurn : number <<generated>>
     --
-    * giver 
-    * guesser
+    * giver : number
+    * guesser : number
 }
 entity HangedMan
 {
     * id_HangedMan: number
     --
-    * id_HangMan : number
-    * completed
-    * 
+    * id_HangManTurn : number
+     completed : boolean
 }
 entity SecretWord
 {
     * id_SecretWord : number <<generated>>
     --
     * id_HangedMan: number
-    * letters
-    * possitions
+    * letters : varchar2(15)
+    * possitions : number
 }
 
 PlayerTurn --|{ TicTacToeTurn
