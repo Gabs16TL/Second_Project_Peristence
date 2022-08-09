@@ -1,28 +1,33 @@
 @startuml VocabularyConceptualModelMain
 
-object round
-object turn
-object player
-object typeGame
-object typeOfPlayer
+object Game
+object Turn
+object PlayerTurn
 
-player }|-up- typeGame
-round --|{ turn
-player ||-- typeOfPlayer
-player -left-|| round
+object Player
+object TypeOfPlayer
+
+Player --o{ PlayerTurn
+Turn --|{ PlayerTurn
+Game --o{ Turn
+TypeOfPlayer --|| Player
 
 /' Tic Tac Toe'/
-object board
-object piece
+object Board
+object Box
+object TicTacToeTurn
 
-board --|{piece
-player --|{piece
+TicTacToeTurn -left-o{ Board
+Board -left-|{ Box
 
 /' HangMan'/
-object word
+object HangManTurn
+object HangedMan
+object SecretWord
 
-player --|{word
+HangManTurn -right-o{  HangedMan
+HangedMan -right-|{ SecretWord
 
-
-
+PlayerTurn --|{ TicTacToeTurn
+PlayerTurn --|{ HangManTurn
 @enduml

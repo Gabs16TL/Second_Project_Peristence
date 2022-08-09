@@ -1,78 +1,103 @@
 @startuml VocabularyLogicModelMain
 
-entity round {
-    * id_round : number <<generated>>
+entity Game
+{
+    * id_Game : number <<generated>>
     --
-    * id_player : number
+    * gameName: varchar2(15)
+}
+entity Turn
+{
+    * id_Turn : number <<generated>>
+    --
+    * id_Game : number
+    * turns : number
+    * players : number
+}
+entity PlayerTurn
+{
+    * id_PlayerTurn : number <<generated>>
+    --
+    * id_Turn : number
+    * id_Player : number
 }
 
-entity turn
+entity Player
 {
-    * id_turn : number <<generated>>
-    --
-    * id_round : number
-}
-
-entity player
-{
-    * id_player : number <<generated>>
+    * id_Player : number <<generated>>
     --
     * playerName :  varchar2(50)
-    * win_points : number
-    * loose_points : number
-    * id_typeOfPlayer : number
-    * id_typeGame : number
+    * winPoints : number
+    * loosePoints : number
+    * id_TypeOfPlayer : number
 }
 
-entity typeOfPlayer {
-    * id_typeOfPlayer : number <<generated>>
-    --
-    * typeOfPlayer: varchar2(25)
-}
-
-
-entity typeGame
+entity TypeOfPlayer
 {
-     * id_typeGame : number <<generated>>
+    * id_TypeOfPlayer : number <<generated>>
     --
-    * typeGame: varchar2(15)
+    * TypeOfPlayer: varchar2(25)
 }
 
-player }|-up- typeGame
-round --|{ turn
-player -left-|| round
-player ||-- typeOfPlayer
-
+TypeOfPlayer -left-|| Player
+Player --o{ PlayerTurn
+Game -right-o{ Turn
+    
+Turn --|{ PlayerTurn
 
 /' Tic Tac Toe'/ 
-entity board {
+entity TicTacToeTurn {
+    * id_TicTacToeTurn : number <<generated>>
+    --
+    * PieceX : number
+    * PieceO : number
+}
+entity Board {
     * id_Board : number <<generated>>
     --
+    * id_TicTacToeTurn : number
     * freePositions : number
 }
-entity piece{
-    *id_piece : number <<generated>>
+entity Box{
+    * id_Box : number <<generated>>
     --
     * id_Board : number 
-    * id_player : number 
-    * piece : varchar2(1)
+    * boxesX :  number
+    * boxesO :  number
+    * piece : varchar2(10)
 }
-
-board --|{piece
-player --|{piece
-
 
 /' HangMan'/
-
-entity word {
-    * id_Word : number <<generated>>
+entity HangManTurn
+{
+    * id_HangMan : number <<generated>>
     --
-     * id_player : number 
-    * secretWord varchar2(10)
-    * guessedWord varchar2(10)
+    * giver 
+    * guesser
+}
+entity HangedMan
+{
+    * id_HangedMan: number
+    --
+    * id_HangMan : number
+    * completed
+    * 
+}
+entity SecretWord
+{
+    * id_SecretWord : number <<generated>>
+    --
+    * id_HangedMan: number
+    * letters
+    * possitions
 }
 
-player --|{word
+PlayerTurn --|{ TicTacToeTurn
+PlayerTurn --|{ HangManTurn
 
+TicTacToeTurn -left-o{ Board
+Board -left-|{ Box
 
+HangManTurn -right-o{  HangedMan
+HangedMan -right-|{ SecretWord
 @enduml
