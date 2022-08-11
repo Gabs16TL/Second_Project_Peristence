@@ -34,9 +34,10 @@ VALUES (009,'Lucas',0,0,001);
 INSERT INTO player (id_player,playername, win_points,loose_points, player.typeofplayer_id_typeofplayer)
 VALUES (010,'Marcos',0,0,001);
 
---Tic Tac Toe Turn
 ----FIRST TURN
-INSERT INTO turn (id_turn, id_game,end )
+
+--Tic Tac Toe Turn
+INSERT INTO turn (id_turn, game_id_game, end )
 VALUES (001, 001, 1);
 
 --FIRST PLAYER
@@ -74,7 +75,7 @@ INSERT INTO box (id_box,boxesx,boxeso,piece,id_board)
 VALUES (006,3,1,'X',001);
 
 ----SECOND TURN
-INSERT INTO turn (id_turn, turn.game_id_game,end )
+INSERT INTO turn (id_turn, game_id_game, end )
 VALUES (002, 001, 1);
 
 --FIRST PLAYER
@@ -94,8 +95,8 @@ INSERT INTO tictactoeturn (id_tictactoeturn, piecex,pieceo,id_playerturn)
 VALUES (003, 2,1, 004);
 
 --INSERT VALUES ON TABLE BOARD
-INSERT INTO board (id_board,freepositions,board.id_tictactoeturn) 
-VALUES (002,0,002);
+INSERT INTO board (id_board,freepositions,id_tictactoeturn) 
+VALUES (002,0,003);
 
 --Vaciar las positions
 TRUNCATE TABLE box;
@@ -114,6 +115,7 @@ VALUES (005,2,2,'O',002);
 INSERT INTO box (id_box,boxesx,boxeso,piece,id_board) 
 VALUES (006,3,1,'O',002);
 
+--THIRD TURN
 
 --HANGMAN
 INSERT INTO turn VALUES (003, 002, 1);
@@ -141,6 +143,7 @@ INSERT INTO secretWord VALUES (004, 'D', 4, 001);
 INSERT INTO secretWord VALUES (005, 'A', 5, 001);
 INSERT INTO secretWord VALUES (006, 'Y', 6, 001);
 
+--FOURTH TURN 
 
 INSERT INTO turn (id_turn,game_id_game,end)
 VALUES (004, 002, 1);
@@ -168,7 +171,73 @@ INSERT INTO secretWord VALUES (003, 'N', 3, 002);
 INSERT INTO secretWord VALUES (004, 'D', 4, 002);
 INSERT INTO secretWord VALUES (005, 'A', 5, 002);
 INSERT INTO secretWord VALUES (006, 'Y', 6, 002);
+commit;
 
+
+--FIVETH TURN 
+
+INSERT INTO turn (id_turn,game_id_game,end)
+VALUES (005, 002, 1);
+
+-- FIRST PLAYER
+INSERT INTO playerturn (id_playerturn, id_player,lastturn, winn, turn_id_turn, turn_game_id_game)
+VALUES (009, 009, 1, 1,003 ,002);
+UPDATE player SET loose_points = -100 WHERE id_player = 009;
+
+--SECOND PLAYER
+INSERT INTO playerturn (id_playerturn, id_player,lastturn, winn, turn_id_turn, turn_game_id_game)
+VALUES (010, 010, 1,1,002, 002);
+UPDATE player SET win_points =  + 100 WHERE id_player = 010;
+
+
+-- 001 VS 002
+INSERT INTO hangmanturn  (id_hangmanturn,giver,guesser,id_playerturn) 
+VALUES (003,002, 009, 010);
+INSERT INTO hangedman (id_hangedman,stillalive,notalive,id_hangmanturn)
+VALUES (003, 0, 1, 003);
+
+-- INSET INTO SECRET WORD
+TRUNCATE TABLE secretword;
+INSERT INTO secretWord VALUES (001, 'M', 1, 002);
+INSERT INTO secretWord VALUES (002, 'O', 2, 002);
+INSERT INTO secretWord VALUES (003, 'N', 3, 002);
+INSERT INTO secretWord VALUES (004, 'D', 4, 002);
+INSERT INTO secretWord VALUES (005, 'A', 5, 002);
+INSERT INTO secretWord VALUES (006, 'Y', 6, 002);
+commit;
+
+
+--SIXTH TURN 
+INSERT INTO turn (id_turn,game_id_game,end)
+VALUES (006, 002, 1);
+
+-- FIRST PLAYER
+INSERT INTO playerturn (id_playerturn, id_player,lastturn, winn, turn_id_turn, turn_game_id_game)
+VALUES (011, 008, 1, 1,004 ,002);
+UPDATE player SET loose_points = -100 WHERE id_player = 008;
+
+--SECOND PLAYER
+INSERT INTO playerturn (id_playerturn, id_player,lastturn, winn, turn_id_turn, turn_game_id_game)
+VALUES (012, 005, 1,1,002, 002);
+UPDATE player SET win_points =  + 100 WHERE id_player = 005;
+
+
+-- 001 VS 002
+INSERT INTO hangmanturn  (id_hangmanturn,giver,guesser,id_playerturn) 
+VALUES (004,008, 005, 011);
+INSERT INTO hangedman (id_hangedman,stillalive,notalive,id_hangmanturn)
+VALUES (004, 0, 1, 004);
+commit;
+
+-- INSET INTO SECRET WORD
+TRUNCATE TABLE secretword;
+INSERT INTO secretWord VALUES (001, 'S', 1, 002);
+INSERT INTO secretWord VALUES (002, 'O', 2, 002);
+INSERT INTO secretWord VALUES (003, 'N', 3, 002);
+INSERT INTO secretWord VALUES (004, 'D', 4, 002);
+INSERT INTO secretWord VALUES (005, 'A', 5, 002);
+INSERT INTO secretWord VALUES (006, 'Y', 6, 002);
+commit;
 
 --el jugador con más partidas jugadas
 SELECT id_player, playername,winn FROM player  
