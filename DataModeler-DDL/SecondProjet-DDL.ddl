@@ -76,7 +76,8 @@ CREATE TABLE playerturn (
     winn              VARCHAR2(1),
     id_player         NUMBER(4) NOT NULL,
     turn_id_turn      NUMBER(4) NOT NULL,
-    turn_game_id_game NUMBER(4) NOT NULL
+    turn_game_id_game NUMBER(4) NOT NULL,
+    opportunities     NUMBER(4)
 )
 LOGGING;
 

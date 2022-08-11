@@ -41,14 +41,14 @@ INSERT INTO turn (id_turn, game_id_game, end )
 VALUES (001, 001, 1);
 
 --FIRST PLAYER
-INSERT INTO playerturn (id_playerturn, id_player,lastturn, winn, turn_id_turn, turn_game_id_game)
-VALUES (0001, 001, 0, 0, 001,001);
+INSERT INTO playerturn (id_playerturn, id_player,lastturn, winn, turn_id_turn, turn_game_id_game, opportunities)
+VALUES (001, 001, 0, 0, 001,001,8);
 
 UPDATE player SET win_points=+100 WHERE id_player = 001;
 
 --SECOND PLAYER
-INSERT INTO playerturn (id_playerturn, id_player,  lastturn, winn, turn_id_turn, turn_game_id_game)
-VALUES (003, 002, 0, 0, 001,001);
+INSERT INTO playerturn (id_playerturn, id_player,lastturn, winn, turn_id_turn, turn_game_id_game, opportunities)
+VALUES (003, 002, 0, 0, 001,001,8);
 
 UPDATE player SET win_points=+100 WHERE id_player = 002;
 
@@ -79,14 +79,14 @@ INSERT INTO turn (id_turn, game_id_game, end )
 VALUES (002, 001, 1);
 
 --FIRST PLAYER
-INSERT INTO playerturn (id_playerturn, id_player,lastturn, winn, turn_id_turn, turn_game_id_game)
-VALUES (002, 002, 1, 1, 002,001);
+INSERT INTO playerturn (id_playerturn, id_player,lastturn, winn, turn_id_turn, turn_game_id_game, opportunities)
+VALUES (002, 002, 1, 1, 002,001, 7);
 
 UPDATE player SET win_points=+100 WHERE id_player = 001;
 
 --SECOND PLAYER
 INSERT INTO playerturn (id_playerturn, id_player,lastturn, winn, turn_id_turn, turn_game_id_game)
-VALUES (004, 002, 0, 0, 002,001);
+VALUES (004, 002, 0, 0, 002,001, 7);
 
 UPDATE player SET win_points=+100 WHERE id_player = 002;
 
@@ -149,13 +149,13 @@ INSERT INTO turn (id_turn,game_id_game,end)
 VALUES (004, 002, 1);
 
 -- FIRST PLAYER
-INSERT INTO playerturn (id_playerturn, id_player,lastturn, winn, turn_id_turn, turn_game_id_game)
-VALUES (006, 004, 0, 1,003 ,002);
-UPDATE player SET loose_points = -100 WHERE id_player = 006;
+INSERT INTO playerturn (id_playerturn, id_player,lastturn, winn, turn_id_turn, turn_game_id_game, opportunities)
+VALUES (006, 004, 0, 1,003 ,002, 6);
+UPDATE player SET loose_points = 100 WHERE id_player = 006;
 
 --SECOND PLAYER
-INSERT INTO playerturn (id_playerturn, id_player,lastturn, winn, turn_id_turn, turn_game_id_game)
-VALUES (008, 004, 0,1,002, 1);
+INSERT INTO playerturn (id_playerturn, id_player,lastturn, winn, turn_id_turn, turn_game_id_game, opportunities)
+VALUES (008, 004, 0,1,002, 1,6);
 UPDATE player SET win_points =  + 100 WHERE id_player = 008;
 
 
@@ -180,13 +180,14 @@ INSERT INTO turn (id_turn,game_id_game,end)
 VALUES (005, 002, 1);
 
 -- FIRST PLAYER
-INSERT INTO playerturn (id_playerturn, id_player,lastturn, winn, turn_id_turn, turn_game_id_game)
-VALUES (009, 009, 1, 1,003 ,002);
-UPDATE player SET loose_points = -100 WHERE id_player = 009;
+INSERT INTO playerturn (id_playerturn, id_player,lastturn, winn, turn_id_turn, turn_game_id_game, opportunities)
+VALUES (009, 009, 1, 1,003 ,002,5);
+UPDATE player SET loose_points = 100 WHERE id_player = 009;
+UPDATE playerturn SET winn=0 WHERE id_player = 009;
 
 --SECOND PLAYER
-INSERT INTO playerturn (id_playerturn, id_player,lastturn, winn, turn_id_turn, turn_game_id_game)
-VALUES (010, 010, 1,1,002, 002);
+INSERT INTO playerturn (id_playerturn, id_player,lastturn, winn, turn_id_turn, turn_game_id_game, opportunities)
+VALUES (010, 010, 1,1,002, 002,5);
 UPDATE player SET win_points =  + 100 WHERE id_player = 010;
 
 
@@ -212,13 +213,13 @@ INSERT INTO turn (id_turn,game_id_game,end)
 VALUES (006, 002, 1);
 
 -- FIRST PLAYER
-INSERT INTO playerturn (id_playerturn, id_player,lastturn, winn, turn_id_turn, turn_game_id_game)
-VALUES (011, 008, 1, 1,004 ,002);
-UPDATE player SET loose_points = -100 WHERE id_player = 008;
+INSERT INTO playerturn (id_playerturn, id_player,lastturn, winn, turn_id_turn, turn_game_id_game, opportunities)
+VALUES (011, 008, 1, 1,004 ,002, 4);
+UPDATE player SET loose_points = 100 WHERE id_player = 008;
 
 --SECOND PLAYER
-INSERT INTO playerturn (id_playerturn, id_player,lastturn, winn, turn_id_turn, turn_game_id_game)
-VALUES (012, 005, 1,1,002, 002);
+INSERT INTO playerturn (id_playerturn, id_player,lastturn, winn, turn_id_turn, turn_game_id_game, opportunities)
+VALUES (012, 005, 1,1,002, 002, 4);
 UPDATE player SET win_points =  + 100 WHERE id_player = 005;
 
 
